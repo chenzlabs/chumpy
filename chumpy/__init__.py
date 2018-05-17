@@ -1,10 +1,13 @@
-from .ch import *
-from .logic import *
+# For relative imports to work in Python 3.6
+import os, sys; sys.path.append(os.path.dirname(os.path.realpath(__file__)))
 
-from .optimization import minimize
+from ch import *
+from logic import *
+
+from optimization import minimize
 import extras
 import testing
-from .version import version as __version__
+from version import version as __version__
 
 from numpy import bool, int, float, complex, object, unicode, str, nan, inf
 
