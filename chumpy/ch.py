@@ -662,7 +662,7 @@ class Ch(object):
 
             if hasattr(p, 'dterms') and p is not wrt and p.is_dr_wrt(wrt):
                 if not isinstance(p, Ch):
-                    print 'BROKEN!'
+                    print('BROKEN!')
                     raise Exception('Broken Should be Ch object')
 
                 indirect_dr = p.lmult_wrt(self._superdot(lhs, self._compute_dr_wrt_sliced(p)), wrt)
