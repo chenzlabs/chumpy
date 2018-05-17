@@ -47,7 +47,7 @@ __all__ += numpy_array_creation_routines
 import ch
 import numpy as np
 import warnings
-import cPickle as pickle
+import pickle # import cPickle as pickle
 import scipy.sparse as sp
 from utils import row, col
 from copy import copy as copy_copy
