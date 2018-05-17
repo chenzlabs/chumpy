@@ -1339,16 +1339,16 @@ def main():
     x30 = Ch(30)
     
     tmp = ChLambda(lambda x, y, z: Ch(1) + Ch(2) * Ch(3) + 4)
-    print tmp.dr_wrt(tmp.x)
+    print(tmp.dr_wrt(tmp.x))
     import pdb; pdb.set_trace()
     #a(b(c(d(e(f),g),h)))
     
     blah = tst(x10, x20, x30)
     
-    print blah.r
+    print(blah.r)
 
 
-    print foo
+    print(foo)
     
     import pdb; pdb.set_trace()
     
