@@ -1,10 +1,10 @@
-from ch import *
-from logic import *
+from .ch import *
+from .logic import *
 
-from optimization import minimize
+from .optimization import minimize
 import extras
 import testing
-from version import version as __version__
+from .version import version as __version__
 
 from numpy import bool, int, float, complex, object, unicode, str, nan, inf
 
